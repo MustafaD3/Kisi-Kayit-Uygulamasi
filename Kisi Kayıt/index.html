@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Personel Kayıt</title>
+    <style>
+        html{
+           scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <nav>
+            <ul>
+                <li><a href="#post">Personel Ekle</a></li>
+                <li><a href="#get">Personel Listele</a></li>
+            </ul>
+        </nav>
+        <div id="post">
+            <form action="" >
+                <label for="name" class="d-block mb-2">
+                    İsim
+                    <input type="text" class="border border-primary rounded" maxlength="60" id="name">
+                </label>
+                <label for="surname" class="d-block mb-2">
+                    Soyisim
+                    <input type="text" class="border border-warning rounded" maxlength="60" id="surname">
+                </label>
+                <label for="age" class="d-block">
+                    Yaş
+                    <input type="text" class="border border-danger  rounded" maxlength="2" id="age">
+                </label>
+                
+                <div id="department">
+                    <h2 class="text-danger">Departman</h2>
+                    <label for="design">
+                        Tasarım:
+                        <input type="radio" checked name="job"  id="design">
+                    </label>
+                    <label for="programer">
+                        Programlama:
+                        <input type="radio" name="job" id="programer">
+                    </label>
+                    <label for="marketing">
+                        Pazarlama:
+                        <input type="radio" name="job" id="marketing">
+                    </label>
+                    <label for="accounting">
+                        Muhasebe:
+                        <input type="radio" name="job" id="accounting">
+                    </label>
+                </div>
+                <button id="postButton" class="form-control bg-primary">Ekle</button>
+            </form>
+        </div>
+        <div id="get" style="margin-top: 14rem; margin-bottom: 2rem;">
+            <table class="table  border-warning table-bordered table-dark">
+              <tbody id="tbody">
+              </tbody>
+            </table>
+            <button class="btn btn-primary form-control" id="getButton">Çek</button>
+        </div>
+    </section>
+    <script type="module" src="js/main.js" crossorigin="anonymous"></script>
+</body>
+</html>

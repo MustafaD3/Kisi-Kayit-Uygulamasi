@@ -1,0 +1,82 @@
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#container nav {
+  margin: 0 !important;
+  padding: 5px !important;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#container nav ul {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style-type: none;
+}
+#container nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+}
+#container #post {
+  width: 87%;
+  margin-left: 20px;
+}
+#container #post::-moz-selection {
+  display: none;
+}
+#container #post::selection {
+  display: none;
+}
+#container #post div::-moz-selection {
+  display: none;
+}
+#container #post div::selection {
+  display: none;
+}
+#container #post form {
+  width: auto;
+  height: auto;
+}
+#container #post form label {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #494b47;
+  font-family: "Courier New", Courier, monospace;
+}
+#container #post form label input {
+  width: 100%;
+}
+#container #post form input[type=text] {
+  border-width: 2px !important;
+}
+#container #post form #department {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 10px;
+}
+#container #post form #department label {
+  width: auto;
+  height: auto;
+  align-self: flex-start;
+}
+#container #post form #department label input {
+  width: auto;
+}
+#container #post form #department label::-moz-selection {
+  display: none;
+}
+#container #post form #department label::selection {
+  display: none;
+}
+#container #post form #department input[type=checkbox]::-moz-selection {
+  display: none;
+}
+#container #post form #department input[type=checkbox]::selection {
+  display: none;
+}
+#container #get {
+  margin-top: 25px;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

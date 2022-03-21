@@ -1,0 +1,78 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    nav{
+        margin: 0 !important;
+        padding: 5px !important;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        ul{
+            padding: 0 !important;
+            margin: 0 !important;
+            list-style-type: none;
+            li{
+                a{
+                    font-size: 20px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    #post{
+        width: 87%;
+        margin-left: 20px;
+        &::selection{
+            display: none;
+        }
+        div::selection{
+            display: none;
+        }
+        form{
+            width: auto;
+            height: auto;
+           label{
+               text-align: center;
+               font-size: 25px;
+               font-weight: bold;
+               color: rgb(73, 75, 71);
+               font-family: 'Courier New', Courier, monospace;
+            input{
+                width: 100%;
+                
+            }
+           }
+            input[type=text]{
+                border-width: 2px !important;
+            }
+        
+        #department{
+            display: inline-flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-left: 10px;
+            label{
+                width: auto;
+                height: auto;
+                align-self: flex-start;
+                input{
+                    width: auto;
+                }
+            }
+            
+            label::selection{
+                display: none;
+            }
+            input[type=checkbox]::selection{
+                display: none;
+            }
+        
+        }
+        }
+    }
+    #get{
+      
+        margin-top: 25px;
+        width: 100%;
+       
+    }
+}
